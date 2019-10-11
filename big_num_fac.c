@@ -1,10 +1,10 @@
-#include <stdio.h>
+1#include <stdio.h>
 #define max_n 100000
 
 int f[max_n + 5] = {1, 1};
 
 int main() {
-    int n, fac = 1;
+    int n;
     scanf ("%d", &n);
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= f[0]; j++) {
