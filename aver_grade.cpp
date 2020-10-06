@@ -60,10 +60,10 @@ int main() {
         stu->set_aver();
     }
     sort(stus.begin(), stus.end(), [](Stu *a, Stu *b) {
-        if (a->get_aver() == b->get_aver()) return a->get_name() > b->get_name();
+        if (a->get_aver() == b->get_aver()) return a->get_name() < b->get_name();
         return a->get_aver() > b->get_aver();
     });
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < stus.size(); i++) {
         cout << stus[i]->get_name();
         printf (" %.2lf\n", stus[i]->get_aver());
     }
