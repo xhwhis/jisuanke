@@ -64,8 +64,7 @@ int main() {
         return a->get_aver() > b->get_aver();
     });
     for (int i = 0; i < stus.size(); i++) {
-        cout << stus[i]->get_name();
-        printf (" %.2lf\n", stus[i]->get_aver());
+        printf ("%s %.2lf\n", stus[i]->get_name().c_str(), stus[i]->get_aver());
     }
     return 0;
 }
